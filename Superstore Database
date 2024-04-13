@@ -1,0 +1,20 @@
+Task: Write an SQL query that uses a SELECT statement to order items by price
+Select item_name, price
+From superstore
+Order by price;
+
+Task: Write an SQL query that shows a statistic about item prices like SUM, AVG, MIN, MAx, or COUNT
+SELECT avg (price)
+From superstore;
+
+Select sum (stock_quantity)
+from superstore;
+
+Select min (price), max (price) 
+From superstore;
+
+Task: Write an SQL query that shows a statistic about the price for items in the category "Kitchen Supplies". 
+select category, item_name, price
+From superstore
+WHERE category = "Kitchen Supplies"
+ORDER BY price;
